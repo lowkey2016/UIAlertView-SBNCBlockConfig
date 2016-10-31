@@ -13,6 +13,8 @@
 		1836A5421DC722C1007DADA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1836A5401DC722C1007DADA4 /* Main.storyboard */; };
 		1836A5441DC722C1007DADA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1836A5431DC722C1007DADA4 /* Assets.xcassets */; };
 		1836A5471DC722C1007DADA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1836A5451DC722C1007DADA4 /* LaunchScreen.storyboard */; };
+		1836A5531DC722D0007DADA4 /* SBNCAlertViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836A5501DC722D0007DADA4 /* SBNCAlertViewItem.m */; };
+		1836A5541DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836A5521DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		1836A5431DC722C1007DADA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1836A5461DC722C1007DADA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1836A5481DC722C1007DADA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1836A54F1DC722D0007DADA4 /* SBNCAlertViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBNCAlertViewItem.h; sourceTree = "<group>"; };
+		1836A5501DC722D0007DADA4 /* SBNCAlertViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBNCAlertViewItem.m; sourceTree = "<group>"; };
+		1836A5511DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SBNCBlockConfig.h"; sourceTree = "<group>"; };
+		1836A5521DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+SBNCBlockConfig.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		1836A5361DC722C1007DADA4 /* SBNCAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				1836A54E1DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig */,
 				1836A53A1DC722C1007DADA4 /* AppDelegate.h */,
 				1836A53B1DC722C1007DADA4 /* AppDelegate.m */,
 				1836A53D1DC722C1007DADA4 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				1836A5381DC722C1007DADA4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1836A54E1DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1836A54F1DC722D0007DADA4 /* SBNCAlertViewItem.h */,
+				1836A5501DC722D0007DADA4 /* SBNCAlertViewItem.m */,
+				1836A5511DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.h */,
+				1836A5521DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.m */,
+			);
+			path = "UIAlertView+SBNCBlockConfig";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +171,9 @@
 			files = (
 				1836A53F1DC722C1007DADA4 /* ViewController.m in Sources */,
 				1836A53C1DC722C1007DADA4 /* AppDelegate.m in Sources */,
+				1836A5531DC722D0007DADA4 /* SBNCAlertViewItem.m in Sources */,
 				1836A5391DC722C1007DADA4 /* main.m in Sources */,
+				1836A5541DC722D0007DADA4 /* UIAlertView+SBNCBlockConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQ7R6TK72B;
 				INFOPLIST_FILE = SBNCAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jymnchen.SBNCAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JQ7R6TK72B;
 				INFOPLIST_FILE = SBNCAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jymnchen.SBNCAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
