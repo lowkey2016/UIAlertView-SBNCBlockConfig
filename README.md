@@ -3,12 +3,12 @@
 
 示例代码：
 ```
-    SBNCAlertViewItem *confirmItem = [[SBNCAlertViewItem alloc] initWithTitle:@"知道了" action:^{
-        NSLog(@"确定");
-    } isCancelItem:NO];
-    SBNCAlertViewItem *cancelItem = [[SBNCAlertViewItem alloc] initWithTitle:@"退下" action:^{
-        NSLog(@"滚");
-    } isCancelItem:YES];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"有件事" message:@"你好吗" items:@[confirmItem, cancelItem]];
-    [alertView show];
+SBNCAlertViewItem *confirmItem = [[SBNCAlertViewItem alloc] initWithTitle:@"知道了" action:^{
+    NSLog(@"确定");
+} isCancelItem:NO];
+SBNCAlertViewItem *cancelItem = [[SBNCAlertViewItem alloc] initWithTitle:@"退下" action:^{
+    NSLog(@"滚");
+} isCancelItem:YES];
+UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"有件事" message:@"你好吗" items:@[confirmItem, cancelItem]];
+[alertView show];
 ```
