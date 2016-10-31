@@ -1,5 +1,5 @@
 # UIAlertView-SBNCBlockConfig
-用更简洁的方式调用 UIAlertView，支持多个按钮，action 用 block 配置。
+用更简洁的方式调用 UIAlertView，支持多个按钮，action 用 block 配置。最低兼容至 iOS 7.
 
 示例代码：
 ```
